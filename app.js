@@ -32,7 +32,6 @@ pm2.Client.launchBus(function(err, bus) {
                 'short_message': log.data,
                 'level': 1
             };
-            console.log('Sending GELF Message:', message);
             gelf.emit('gelf.log', message);
         }
     });

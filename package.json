@@ -1,0 +1,24 @@
+{
+  "name": "pm2-gelf",
+  "version": "0.0.1",
+  "description": "PM2 Logging to GELF for GrayLog",
+  "main": "app.js",
+  "dependencies": {
+    "gelf": "^1.0.3",
+    "pm2": "^2.0.18",
+    "pmx": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cliv/pm2-gelf.git"
+  },
+  "config": {
+    "graylogPort": 12201,
+    "graylogHostname": "127.0.0.1",
+    "connection": "wan",
+    "maxChunkSizeWan": 1420,
+    "maxChunkSizeLan": 8154
+  },
+  "author": "Charlie Livingston <cliv@ath0.net>",
+  "license": "MIT"
+}

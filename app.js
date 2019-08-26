@@ -30,7 +30,7 @@ pm2.Client.launchBus(function(err, bus) {
                 'host': hostname,
                 'timestamp': (log.at / 1000),
                 'short_message': log.data,
-                'level': 1,
+                'level': 6,
                 'facility': log.process.name
             };
             gelf.emit('gelf.log', message);
